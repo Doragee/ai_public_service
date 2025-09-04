@@ -3,7 +3,7 @@
 
 CREATE EXTENSION vector;
 
-CREATE TABLE complaints (
+CREATE TABLE civil_complaints (
     id SERIAL PRIMARY KEY,                          -- 연번 (자동 증가, 기본 키)
     complaint_number VARCHAR(255) UNIQUE NOT NULL,  -- 민원번호 (고유값)
     title VARCHAR(255) NOT NULL,                    -- 제목
