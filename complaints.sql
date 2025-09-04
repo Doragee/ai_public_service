@@ -1,6 +1,8 @@
 -- pgvector 확장이 설치되어 있어야 합니다.
 -- CREATE EXTENSION IF NOT EXISTS vector;
 
+CREATE EXTENSION vector;
+
 CREATE TABLE complaints (
     id SERIAL PRIMARY KEY,                          -- 연번 (자동 증가, 기본 키)
     complaint_number VARCHAR(255) UNIQUE NOT NULL,  -- 민원번호 (고유값)
